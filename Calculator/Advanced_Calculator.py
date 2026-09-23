@@ -45,8 +45,10 @@ while choice!=3:
         if num<0:
           print("Math error.")
           while num<0:
-            num=int(input("Enter positive number to square root"))
+            num=int(input("Enter positive number for square root: "))
+          
         ans=math.sqrt(num)
+        ans=round(ans,2)
     else:
       print("Invalid math choice")
       ans=""
@@ -69,7 +71,7 @@ while choice!=3:
       print("b²-4ac<0, no solution. ")
       a=int(input("a= "))
       while a==0:
-        print("b")
+        print("Not a quadratic")
         a=int(input("a= "))
       b=int(input("b= "))
       c=int(input("c= "))
